@@ -37,7 +37,7 @@ Please also read the license of the alsa library inside of the alsa folder.
 INSTALL
 
 
-[[1.1) Create makefile for Qt source (execute commands and create files inside of gnulocsys-1.9.5 folder)
+[[1.1) Create makefile for Qt source (execute commands and create files inside of folder)
 qmake
 1.1.1) Edit makefile
 -remove absolute paths:
@@ -48,7 +48,7 @@ old: @test -d $(INSTALL_ROOT)/usr/local/bin
 new: @test -d $(INSTALL_ROOT)$(DESTDIR)/usr/bin 
 1.2) Create configure file
 1.2.1) Create configure.ac file:
-AC_INIT([gnulocsys], 1.9.5)
+AC_INIT([ArpConnector], 9.0.0)
 AM_INIT_AUTOMAKE
 AC_PROG_CC
 AC_CONFIG_FILES(Makefile)
