@@ -12,7 +12,7 @@ ArpConnector turns a mini computer like raspberry pi into a live performance als
 
 - please restart ArpConnector after saving changes (e.g. changing the path of the qmidiarp file).
 
-- required: libasound2-dev
+- required: libasound2-dev, (gnome-terminal
 
 ArpConnector: Copyright (c) 2016 A. Klumpp
 
