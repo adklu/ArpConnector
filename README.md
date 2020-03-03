@@ -36,35 +36,12 @@ Please read the license of the ALSA library inside of the ALSA folder.
 INSTALL
 
 
-[[1.1) Create makefile for Qt source (execute commands and create files inside of folder)
-qmake
-1.1.1) Edit makefile
--remove absolute paths:
-old: /home/username/gnulocsys
-new: gnulocsys
--add $(DESTDIR) and remove local in install path:
-old: @test -d $(INSTALL_ROOT)/usr/local/bin 
-new: @test -d $(INSTALL_ROOT)$(DESTDIR)/usr/bin 
-1.2) Create configure file
-1.2.1) Create configure.ac file:
-AC_INIT([ArpConnector], 9.0.0)
-AM_INIT_AUTOMAKE
-AC_PROG_CC
-AC_CONFIG_FILES(Makefile)
-AC_OUTPUT
-1.2.2) Rename Makefile into Makefile.am
-1.2.3) aclocal
-1.2.4) automake --add-missing --foreign
-1.2.5) autoconf
-1.2.6) Rename Makefile.am into Makefile]]
+qmake  
+mv Makefile Makefile.am  
+aclocal  
+automake --add-missing --foreign  
+autoconf  
+mv Makefile.am Makefile  
+./configure  
+make  
 
-1.3) If makefile is already available Configure: make, make install
-
-1.3.1
-./configure
-
-1.3.2
-make
-
-1.3.3 (optional)
-sudo make install
