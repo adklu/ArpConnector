@@ -45,3 +45,11 @@ mv Makefile.am Makefile
 ./configure  
 make  
 
+
+(Create configure.ac file: 
+AC_INIT([AtpConnector], 0.x.0) 
+AM_INIT_AUTOMAKE 
+AC_PROG_CC 
+AC_CONFIG_FILES(Makefile) 
+AC_OUTPUT )
+
