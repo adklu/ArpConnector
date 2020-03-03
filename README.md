@@ -1,18 +1,17 @@
 # ArpConnector
 
-ArpConnector turns a mini computer like raspberry pi into a live performance alsa-qmidiarp box, which requires no screen (tested with raspberry pi 3 and Ubuntu Mate).
 
 - performance without a screen, only midi keyboard  (midi controller to access the advanced midi learn features of qmidiarp required)
 
-- screen only for first time setup (connection between Keyboard, external midi clock, qmidiarp) and advanced configuration required (change of devices)
+- screen required for first time setup (connection between Keyboard, external midi clock, qmidiarp) and advanced configuration required (change of devices)
 
 - autoconnect features: Add ArpConnector to the autostart programs (e.g. from usr/local/bin), ArpConnector starts qmidiarp ready to play in alsa mode (qmidiarp -a) and connects all required alsa midi connections (Keyboard, midi clock, qmidiarp)
 
-- please set the clock of qmidiarp to midi input to start and stop qmidiarp via midi controller 
+- please set the clock of qmidiarp to 'midi input' to start and stop qmidiarp via midi controller 
 
 - please restart ArpConnector after saving changes (e.g. changing the path of the qmidiarp file).
 
-- required: libasound2-dev, (gnome-terminal
+- required: libasound2-dev, (gnome-terminal)
 
 ArpConnector: Copyright (c) 2016 A. Klumpp
 
@@ -31,7 +30,7 @@ ArpConnector: Copyright (c) 2016 A. Klumpp
 // *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA
 // *
 
-Please also read the license of the alsa library inside of the alsa folder.
+Please read the license of the ALSA library inside of the ALSA folder.
 
 
 INSTALL
