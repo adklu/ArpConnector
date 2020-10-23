@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="windowModality">
+   <enum>Qt::WindowModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>431</width>
+    <height>372</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>9</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>ArpConnector</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>431</width>
+      <height>351</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="tab">
+     <attribute name="title">
+      <string>Connect Setup</string>
+     </attribute>
+     <widget class="QPushButton" name="pushButtonRec">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>290</y>
+        <width>61</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Connect</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButtonStop">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>290</y>
+        <width>71</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Disconnect</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxArpIn">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>100</y>
+        <width>361</width>
+        <height>21</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxKeyOut">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>60</y>
+        <width>361</width>
+        <height>21</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEditPath">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>361</width>
+        <height>21</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>0</y>
+        <width>251</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>9</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Path to qmidiarp file e.g. /home/myarp.qmax</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButtonPath">
+      <property name="geometry">
+       <rect>
+        <x>380</x>
+        <y>20</y>
+        <width>41</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Save</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>40</y>
+        <width>211</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>9</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>From midi Keyboard out:</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButtonKey">
+      <property name="geometry">
+       <rect>
+        <x>380</x>
+        <y>60</y>
+        <width>41</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Save</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>80</y>
+        <width>101</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>9</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>To qmidiarp in:</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButtonArpIn">
+      <property name="geometry">
+       <rect>
+        <x>380</x>
+        <y>100</y>
+        <width>41</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Save</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButtonSynthIn">
+      <property name="geometry">
+       <rect>
+        <x>380</x>
+        <y>180</y>
+        <width>41</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Save</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboSynthIn">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>180</y>
+        <width>361</width>
+        <height>21</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>120</y>
+        <width>211</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>9</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>From qmidiarp out:</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxArpOut">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>140</y>
+        <width>361</width>
+        <height>21</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButtonArpOut">
+      <property name="geometry">
+       <rect>
+        <x>380</x>
+        <y>140</y>
+        <width>41</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Save</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_6">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>160</y>
+        <width>101</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>9</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>To midi synth in:</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButtonClockIn">
+      <property name="geometry">
+       <rect>
+        <x>380</x>
+        <y>260</y>
+        <width>41</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Save</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxClockIn">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>260</y>
+        <width>361</width>
+        <height>21</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_7">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>200</y>
+        <width>211</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>9</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>From midi clock out:</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxClockOut">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>220</y>
+        <width>361</width>
+        <height>21</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButtonClockOut">
+      <property name="geometry">
+       <rect>
+        <x>380</x>
+        <y>220</y>
+        <width>41</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Save</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_8">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>240</y>
+        <width>121</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>9</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>To qmidiarp clock in:</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButtonAuto">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>290</y>
+        <width>91</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Autoconnect</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="labelStatus">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>290</y>
+        <width>111</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_2">
+     <attribute name="title">
+      <string>About</string>
+     </attribute>
+     <layout class="QGridLayout" name="gridLayout_3">
+      <item row="0" column="0">
+       <widget class="QPlainTextEdit" name="plainTextEdit">
+        <property name="plainText">
+         <string>Add ArpConnector to the autostart programs (e.g. from usr/local/bin) in order to get a &quot;screen free&quot; qmidiarp linux (e.g. raspberry pi) box (tested with qmidiarp and midi controller; set the clock to midi input to start and stop qmidiarp via midi controller).
+
+Please restart ArpConnector after saving changes (e.g. changing the path of the qmidiarp file).
+
+ArpConnector : Copyright (c) 2016 A. Klumpp
+
+
+// *  This program is free software; you can redistribute it and/or modify
+// *  it under the terms of the GNU General Public License as published by
+// *  the Free Software Foundation; either version 2 of the License, or
+// *  (at your option) any later version.
+// *
+// *  This program is distributed in the hope that it will be useful,
+// *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+// *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// *  GNU General Public License for more details.
+// *
+// *  You should have received a copy of the GNU General Public License
+// *  along with this program; if not, write to the Free Software
+// *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA
+// *
+</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButtonRec</sender>
+   <signal>pressed()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>slotrec()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>152</x>
+     <y>338</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>233</x>
+     <y>194</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButtonStop</sender>
+   <signal>pressed()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>slotstop()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>82</x>
+     <y>338</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>233</x>
+     <y>194</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>slotrec()</slot>
+  <slot>slotstop()</slot>
+ </slots>
+</ui>
