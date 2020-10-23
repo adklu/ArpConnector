@@ -1,7 +1,8 @@
 # ArpConnector
 
+- for qmidiarp
 
-- performance without a screen, only midi keyboard  (midi controller to access the advanced midi learn features of qmidiarp required)
+- performance without a screen, only via midi keyboard  (midi controller to access the advanced midi learn features of qmidiarp required)
 
 - screen only required for first time setup (connection between Keyboard, external midi clock, qmidiarp) and advanced configuration required (change of devices)
 
