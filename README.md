@@ -35,6 +35,8 @@ libasound2
 
 gnome-terminal
 
+qmidiarp
+
 
 (gtk2: install qt5-style-plugins -> echo "export QT_QPA_PLATFORMTHEME=gtk2" >> ~/.profile)
 
