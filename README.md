@@ -48,7 +48,7 @@ mark all .sh and .desktop files as executables
 
 ./INSTALL.sh
 
-Edit Desktop file (GUI_TRM8TT.desktop):
+Edit Desktop file
 
 
 
