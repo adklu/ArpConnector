@@ -11,7 +11,46 @@
 
 - restart ArpConnector after saving the changes (e.g. changing the path of the qmidiarp file).
 
-- required: libasound2-dev, (gnome-terminal)
+REQUIRED
+
+Linux (tested with Debian 9 and 10)
+
+Qt5, qt5-default
+
+build-essential
+
+qmake
+
+GNU Autotools (automake, autoconf, configure, make)
+
+mesa-common-dev
+
+libgl1-mesa-dev, libglu1-mesa-dev
+
+ALSA
+
+libasound2-dev
+
+libasound2
+
+gnome-terminal
+
+
+(gtk2: install qt5-style-plugins -> echo "export QT_QPA_PLATFORMTHEME=gtk2" >> ~/.profile)
+
+
+
+INSTALL
+
+Copy Source into (replace [username]): /home/[username]/GUI_TRM8TT
+
+mark all .sh and .desktop files as executables
+
+./INSTALL.sh
+
+Edit Desktop file (GUI_TRM8TT.desktop):
+
+
 
 ArpConnector: Copyright (c) 2016 A. Klumpp
 
@@ -33,23 +72,4 @@ ArpConnector: Copyright (c) 2016 A. Klumpp
 Please read the license of the ALSA library inside of the ALSA folder.
 
 
-INSTALL
-
-
-qmake  
-mv Makefile Makefile.am  
-aclocal  
-automake --add-missing --foreign  
-autoconf  
-mv Makefile.am Makefile  
-./configure  
-make  
-
-
-(Create configure.ac file: 
-AC_INIT([AtpConnector], 0.x.0) 
-AM_INIT_AUTOMAKE 
-AC_PROG_CC 
-AC_CONFIG_FILES(Makefile) 
-AC_OUTPUT )
 
