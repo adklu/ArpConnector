@@ -7,9 +7,9 @@
 
 - autoconnect features: Add ArpConnector to the autostart programs (e.g. from usr/local/bin), ArpConnector starts qmidiarp ready to play in alsa mode (qmidiarp -a) and connects all required alsa midi connections (Keyboard, midi clock, qmidiarp)
 
-- please set the clock of qmidiarp to 'midi input' to start and stop qmidiarp via midi controller 
+- set the clock of qmidiarp to 'midi input' to start and stop qmidiarp via midi controller 
 
-- please restart ArpConnector after saving changes (e.g. changing the path of the qmidiarp file).
+- restart ArpConnector after saving the changes (e.g. changing the path of the qmidiarp file).
 
 - required: libasound2-dev, (gnome-terminal)
 
