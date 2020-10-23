@@ -3,7 +3,7 @@
 
 - performance without a screen, only midi keyboard  (midi controller to access the advanced midi learn features of qmidiarp required)
 
-- screen required for first time setup (connection between Keyboard, external midi clock, qmidiarp) and advanced configuration required (change of devices)
+- screen only required for first time setup (connection between Keyboard, external midi clock, qmidiarp) and advanced configuration required (change of devices)
 
 - autoconnect features: Add ArpConnector to the autostart programs (e.g. from usr/local/bin), ArpConnector starts qmidiarp ready to play in alsa mode (qmidiarp -a) and connects all required alsa midi connections (Keyboard, midi clock, qmidiarp)
 
