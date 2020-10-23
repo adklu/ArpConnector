@@ -40,15 +40,7 @@ gnome-terminal
 
 
 
-INSTALL
-
-Copy Source into (replace [username]): /home/[username]/GUI_TRM8TT
-
-mark all .sh and .desktop files as executables
-
-./INSTALL.sh
-
-Edit Desktop file
+INSTALL: ./INSTALL.sh
 
 
 
