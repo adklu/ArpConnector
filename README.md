@@ -61,7 +61,7 @@ ArpConnector: Copyright (c) 2016 A. Klumpp
 // *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA
 // *
 
-Please read the license of the ALSA library inside of the ALSA folder.
+
 
 
 
