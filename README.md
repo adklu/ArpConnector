@@ -1,16 +1,3 @@
-# ArpConnector
-
-- for qmidiarp
-
-- performance without a screen, only via midi keyboard  (midi controller to access the advanced midi learn features of qmidiarp required)
-
-- screen only required for first time setup (connection between Keyboard, external midi clock, qmidiarp) and advanced configuration required (change of devices)
-
-- autoconnect features: Add ArpConnector to the autostart programs (e.g. from usr/local/bin), ArpConnector starts qmidiarp ready to play in alsa mode (qmidiarp -a) and connects all required alsa midi connections (Keyboard, midi clock, qmidiarp)
-
-- set the clock of qmidiarp to 'midi input' to start and stop qmidiarp via midi controller 
-
-- restart ArpConnector after saving the changes (e.g. changing the path of the qmidiarp file).
 
 REQUIRED
 
